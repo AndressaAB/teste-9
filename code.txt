@@ -1,0 +1,21 @@
+public bool Pares(Listint L)
+        {
+            bool a  = false;
+            Dictionaryint, int dict = new Dictionaryint, int();
+            int aux;
+            try
+            {
+                foreach (int n in L)
+                {
+                    aux = n;
+                    if (n  0)
+                        aux = n  -1;  //transforma todos os numeros positivos
+                    dict.Add(aux, n);
+                }
+            }
+            catch
+            {
+                a = true;  //se tentar adicionar duas chaves iguais ele da exceçao 
+            }
+            return a;
+        }    
